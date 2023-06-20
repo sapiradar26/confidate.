@@ -1,0 +1,964 @@
+﻿@font-face {
+    font-family: 'MPLUSRounded1c-Bold';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MPLUSRounded1c-Light';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MPLUSRounded1c-ExtraBold';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MPLUSRounded1c-Black';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Black.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MPLUSRounded1c-Regular';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'MPLUSRounded1c-Medium';
+    src: url('../fonts/M_PLUS_Rounded_1c/MPLUSRounded1c-Medium.ttf') format('truetype');
+}
+
+/*__________________לכל העמודים_____________________*/
+
+body {
+    direction: rtl;
+    width: 1280px;
+    margin: 0 auto;
+    background-color: black;
+}
+
+#container, #container2, #container3, #container4, #container5, #container6 {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+    header {
+        background-color: white;
+        height: 100px;
+        position: relative;
+        transition: all 1s;
+    }
+
+#skipToContent {
+    position: absolute;
+    top: -500px;
+    transition: transform 0.3s;
+}
+
+    #skipToContent:focus {
+        position: absolute;
+        top: 70px;
+        right: 220px;
+        padding: 25px;
+        color: black;
+        font-size: 40px;
+        font-family: MPLUSRounded1c-ExtraBold;
+        text-decoration: none;
+        border: 4px solid black;
+        border-radius: 20px;
+        background-color: #3F50F3;
+    }
+
+#logoSize {
+    width: 190px;
+    height: 63px;
+    float: right;
+    margin-top: 17px;
+    margin-right: 15px;
+}
+
+.iconsAccessibilitySize {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 15px;
+}
+
+.mafridHeader {
+    box-shadow: 1px 1px 10px gray;
+}
+
+h2 {
+    font-size: 50px;
+    font-family: 'Rounded Mplus 1c';
+    text-align: center;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    margin: 30px;
+    clear: both;
+}
+
+    footer a {
+        color: white;
+        font-family: MPLUSRounded1c-Black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+        footer a:hover, footer a:focus {
+            color: #FF7F64;
+        }
+
+.mobilityNav {
+    position: fixed;
+    width: 85%;
+    height: 90px;
+    border: solid 3px;
+    border-color: #EBB855;
+    box-shadow: 1px 1px 10px gray;
+    border-radius: 30px;
+    background-color: white;
+    z-index: 100;
+}
+
+.upArrowClass {
+    display: none;
+}
+
+.upArrowShow {
+    display: block;
+    position: fixed;
+    top: 600px;
+    right: 1270px;
+    width: 70px;
+    height: 70px;
+    z-index: 5;
+    cursor: pointer;
+    background-image: url('../images/icons/חץ למעלה.png');
+    background-repeat: no-repeat;
+    background-size: 80px 80px;
+    background-position: center;
+    border-radius: 100px;
+    border-color: #FF7F64;
+}
+
+/*-----------תפריט ראשי--------------*/
+
+#nav1 {
+    clear: both;
+    position: relative;
+    z-index: 3
+}
+
+    #nav1 > ul {
+        list-style: none;
+        position: absolute;
+        right: 28%;
+        top: 20px;
+    }
+
+    #nav1 ul li {
+        display: inline-block;
+        float: right;
+    }
+
+        #nav1 ul li ul {
+            display: none;
+        }
+
+        #nav1 ul li a {
+            display: block;
+            width: 150px;
+            height: 30px;
+            color: black;
+            padding: 15px 5px 5px 5px;
+            font-size: 20px;
+            font-family: MPLUSRounded1c-Medium;
+            text-align: center;
+            text-decoration: none;
+            background-color: white;
+        }
+
+        #nav1 ul li ul li a {
+            border: 2px solid;
+            border-radius: 5px;
+        }
+
+        #nav1 ul li a:hover, #nav1 ul li a:focus {
+            background-color: lawngreen;
+        }
+
+        #nav1 ul li:hover ul, #nav1 ul li:focus ul {
+            display: block;
+        }
+
+#before, #durring, #after {
+    position: absolute;
+    width: 150px;
+}
+
+#before {
+    left: 330px;
+}
+
+#durring {
+    left: 170px;
+}
+
+#after {
+    left: 10px;
+}
+
+.notActive {
+    cursor: not-allowed;
+    color: gray;
+}
+
+/*---------------פירורי לחם------------*/
+
+#perorim {
+    padding-top: 15px;
+}
+
+    #perorim a {
+        color: #FF7F64;
+        font-family: MPLUSRounded1c-Medium;
+        font-size: 17px;
+    }
+
+.lineUnder {
+    text-decoration: underline;
+}
+
+#perorim ol {
+    list-style: none
+}
+
+    #perorim ol li {
+        display: inline-block;
+    }
+
+        #perorim ol li:last-child a {
+            color: white;
+            font-weight:bold;
+        }
+
+        #perorim ol li:after {
+            content: " > ";
+            color: #FF7F64;
+        }
+
+        #perorim ol li:last-child:after {
+            content: "";
+        }
+
+/*_______________עמוד הבית_________________*/
+
+#homePagePhoto {
+    width: 1280px;
+    height: 650px;
+}
+
+#titlesHomePage {
+    position: relative;
+}
+
+#mainTitle {
+    position: absolute;
+    top: 90px;
+    right: 240px;
+    width: 650px;
+    height: 50px;
+    font-size: 100px;
+    font-family: MPLUSRounded1c-Black;
+}
+
+#secondTitle {
+    position: absolute;
+    top: 360px;
+    right: 230px;
+    width: 600px;
+    height: 300px;
+    font-size: 35px;
+    font-family: 'Rounded Mplus 1c';
+    text-align: center;
+}
+
+#hetzimHomePage {
+    position:absolute;
+    top: 420px;
+    right: 700px;
+    width: 40px;
+    height: 30px;
+}
+
+#bg-champagneRight {
+    position: absolute;
+    top: 1340px;
+    width: 270px;
+    height: 1650px;
+}
+
+/*----------------- קיצורים ---------------*/
+#kitzurim {
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin: 30px 0px 10px 0px;
+}
+
+    #kitzurim h2 {
+        color: white;
+        height: 50px;
+        margin-top: 50px;
+        margin-bottom: 15px;
+    }
+
+    #kitzurim p {
+        color: white;
+        font-size: 20px;
+        font-family: MPLUSRounded1c-Medium;
+    }
+
+    #kitzurim img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #kitzurim li {
+        display: inline-block;
+        margin: 57px;
+        transition: all 0.3s;
+    }
+
+        #kitzurim li:hover, #kitzurim li:focus {
+            transform: rotate(7deg);
+        }
+ 
+        #kitzurim li a {
+
+            text-align: center;
+            font-weight: bolder;
+            text-decoration: none;
+        }
+
+/*------------------ מטרת האתר------------------*/
+
+#matara {
+    padding: 50px 0px;
+    width: 1280px;
+    height: 1030px;
+    text-align: center;
+    margin-bottom: -30px;
+    position: relative;
+    background-size:1280px 1030px;
+    background-repeat: no-repeat;
+    background-image: url('../images/bg-color1.1.png');
+}
+
+#matara h2 {
+    margin-top: 40px;
+    font-size: 50px;
+    font-family: 'Rounded Mplus 1c';
+}
+
+#pMatara {
+    color: black;
+    margin:auto;
+    width: 700px;
+    height: 150px;
+    font-size: 30px;
+    font-family: MPLUSRounded1c-Medium;
+}
+
+#pMouseHover {
+    color: black;
+    position: relative;
+    top: 60px;
+    font-size: 30px;
+    font-family: MPLUSRounded1c-Light;
+}
+
+#bubblesSection {
+    position: relative;
+    height: 600px;
+}
+
+#partBefore, #partDurring, #partAfter {
+    display: none;
+}
+
+#characterBefore:hover + #partBefore, #characterDurring:hover + #partDurring, #characterAfter:hover + #partAfter {
+    display: block;
+}
+
+#bubblesSection img, #bubblesSection p {
+    color: black;
+    position: absolute;
+}
+
+.characterSize {
+    top: 250px;
+    width: 200px;
+    height: 370px;
+}
+
+.bubbleSize {
+    top: 100px;
+    width: 500px;
+    height: 200px;
+}
+
+#bubblesSection p {
+    top: 150px;
+    width: 350px;
+    font-size: 28px;
+    font-family: MPLUSRounded1c-Bold;
+}
+
+/*-----------------*/
+
+#characterBefore {
+    right: 170px;
+}
+
+#bubbleBefore {
+    right: 250px;
+}
+
+#pBefore {
+    right: 325px;
+}
+
+/*-----------------*/
+
+#characterDurring {
+    right: 540px;
+}
+
+#bubbleDurring {
+    right: 400px;
+}
+
+#pDurring {
+    right: 480px;
+}
+
+/*-----------------*/
+
+#characterAfter {
+    left: 170px;
+}
+
+#bubbleAfter {
+    right: 480px;
+}
+
+#pAfter {
+    right: 550px;
+}
+
+/*--------------- סיפורים -------------------*/
+
+#sipurim {
+    margin: 0px 300px;
+}
+
+#otef1, #otef2, #otef3 {
+    margin: 50px 0;
+    width: 100%;
+    height: 130px;
+}
+
+#sipurim h2 {
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+#sipurim pre {
+    color: white;
+    margin: 10px 0;
+    width: 130px;
+    height: 90px;
+    font-size: 40px;
+    font-family: 'Rounded Mplus 1c';
+    font-weight: bold;
+    text-align: center;
+}
+
+#sipurim p {
+    color: white;
+    width: 450px;
+    height: 100px;
+    font-size: 20px;
+    font-family: MPLUSRounded1c-Light;
+}
+
+.moreStory {
+    width:150px;
+    height:20px;
+    font-weight: bold;
+    font-family: MPLUSRounded1c-Medium;
+    color: #FF7F64;
+    cursor: not-allowed;
+    clear: both;
+}
+
+#otef1 a,#otef3 a {
+    margin-left: 40px;
+} 
+
+#otef2 a {
+    margin-right: 250px;
+}
+
+/*_________ משותף עמודים פנימיים _______*/
+
+.topPage{
+    padding:80px 50px;
+    width:750px;
+    position: relative;
+}
+
+.titlePage{
+    position:relative;
+    margin:30px 0px;
+    font-size:80px;
+    font-family: MPLUSRounded1c-ExtraBold;
+    color: white;
+}
+
+.piscaPage{
+    color: white;
+    font-size:27px;
+    font-family: MPLUSRounded1c-Bold;
+    line-height:48px;
+}
+
+.bg-circles {
+    position: relative;
+    height: 500px;
+    background-image: url('../images/עיגול.png');
+    background-repeat: no-repeat;
+}
+
+#bg-circle1 {
+    background-position: 200px 70px;
+    background-size: 400px;
+}
+
+/*_______________חששות ופחדים____________________*/
+
+#hetzimHashashot {
+    position: absolute;
+    top: 635px;
+    right: 50%;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    padding: 20px;
+}
+
+.photoSize {
+    position: absolute;
+    top: 60px;
+    right: 900px;
+    width: 300px;
+    height: 350px;
+}
+
+#bg-circle2 {
+    background-position: 650px 20px;
+    background-size: 200px;
+}
+
+/*------------ תפריט כפתורים מלאכים ----------*/
+
+#btn-angels {
+    margin-top: 240px;
+    margin-bottom: 120px;
+}
+
+#btn-angels h2 {
+    color: white;
+}
+
+#btn-angels img {
+    width: 80px;
+    height: 80px;
+}
+
+#btn-angels li {
+    display: inline-block;
+    margin: 32px;
+    transition: all 0.5s;
+}
+
+#btn-angels li:hover, #btn-angels li:focus {
+    transform: rotate(7deg);
+}
+
+#btn-angels li pre {
+    height: 40px;
+    font-family: MPLUSRounded1c-Medium;
+    color: white;
+}
+
+#btn-angels li a {
+    color: black;
+    font-size: large;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*---------- דרכים להתמודדות ------------*/
+
+.bg-colorStripe {
+    margin: -50px 0px;
+    height: 500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.bg-colorOrange {
+    background-image: url('../images/bg-color1.png');
+}
+
+.bg-colorYellow {
+    background-image: url('../images/bg-color2.png');
+}
+
+.angelsHashashot {
+    width: 290px;
+    height: 380px;
+}
+
+.angelsRight {
+    margin: 0px 80px 30px 0px;
+}
+
+.angelsLeft {
+    margin: 0px 0px 30px 80px;
+}
+
+.txtHashashot {
+    margin: 90px 90px;
+    width: 650px;
+    height: 200px;
+    line-height: 35px;
+}
+
+#drahim h3 {
+    margin-bottom: 30px;
+    font-size: 47px;
+    font-family: MPLUSRounded1c-Black;
+    text-align: right;
+}
+
+#drahim p {
+    font-size: 21px;
+    font-family: MPLUSRounded1c-Bold;
+}
+
+/*____________ עשה \ אל תעשה ______________*/
+
+#doAndDontDo {
+    position: relative;
+    height: 5800px;
+    border-radius: 70px;
+    background-color: black;
+}
+
+#likes {
+    position: absolute;
+    top: 100px;
+    right: 800px;
+    width: 400px;
+    height: 350px;
+    background-color: white;
+}
+
+#kadima {
+    color: white;
+    position: absolute;
+    top: 550px;
+    right: 330px;
+    font-size: 30px;
+    font-family: MPLUSRounded1c-ExtraBold;
+}
+
+#hetzimDOandDontDo {
+    position: absolute;
+    top: 600px;
+    right: 390px;
+    width: 60px;
+    height: 50px;
+    background-color: white;
+    padding: 20px;
+}
+
+#angelDo {
+    position: absolute;
+    top: 96px;
+    right: 5px;
+    width: 350px;
+    height: 400px;
+    transform: rotate(345deg);
+}
+
+#doTxt {
+    position: absolute;
+    top: 500px;
+    right: 120px;
+    color: #1EA556;
+    font-size: 30px;
+    font-family: MPLUSRounded1c-Bold;
+}
+
+#angelDontDo {
+    position: absolute;
+    top: 116px;
+    left: 40px;
+    width: 350px;
+    height: 450px;
+    transform: rotate(22deg);
+}
+
+#dontDoTxt {
+    position: absolute;
+    top: 530px;
+    left: 100px;
+    color: #EC1C24;
+    font-size: 30px;
+    font-family: MPLUSRounded1c-Bold;
+}
+
+.arrows {
+    position: absolute;
+    top: 300px;
+    width: 380px;
+    height: 5540px;
+}
+
+#greenArrows {
+    right: 250px;
+}
+
+#redArrows {
+    left: 100px;
+}
+
+.actionsTxt {
+    position: absolute;
+    width: 550px;
+    height: 200px;
+    font-size: 20px;
+    font-family: MPLUSRounded1c-Bold;
+    color: white;
+}
+
+/*------------- טקסטים ירוקים ------------*/
+#greenPart a {
+    color: #00A651;
+}
+
+#greenActionTxt1 {
+    top: 710px;
+    right: 60px;
+}
+
+#greenActionTxt2 {
+    top: 1460px;
+    right: 130px;
+}
+
+#greenActionTxt3 {
+    top: 2330px;
+    right: 80px;
+}
+
+#greenActionTxt4 {
+    top: 3200px;
+    right: 65px;
+}
+
+#greenActionTxt5 {
+    top: 4190px;
+    right: 125px;
+}
+
+#greenActionTxt6 {
+    top: 4960px;
+    right: 135px;
+}
+
+/*------------- טקסטים אדומים ------------*/
+
+#redActionTxt1 {
+    top: 1160px;
+    left: 30px;
+}
+
+#redActionTxt2 {
+    top: 1940px;
+    left: 0px;
+}
+
+#redActionTxt3 {
+    top: 2810px;
+    left: 50px;
+}
+
+#redActionTxt4 {
+    top: 3680px;
+    left: 60px;
+}
+
+#redActionTxt5 {
+    top: 4615px;
+    left: 20px;
+}
+
+#redActionTxt6 {
+    top: 5265px;
+    left: 30px;
+}
+
+/*__________אודות + מפה + צור קשר ________*/
+
+#container4 main, #container5 main, #container6 main, #container4 #perorim, #container5 #perorim, #container6 #perorim {
+    background-color: black;
+}
+
+#container4 h1, #container5 h1, #container6 h1 {
+    font-size: 60px;
+    font-family: MPLUSRounded1c-Black;
+    color:white;
+}
+
+form label, #mapatAtar nav li ul li {
+    font-size: 20px;
+    font-family: MPLUSRounded1c-Medium;
+}
+
+/*___________ אודות ___________*/
+
+#container4 {
+    line-height: 25px;
+}
+
+#odot {
+    margin: 0px 90px 0px 280px;
+    padding: 10px 0px;
+}
+
+    #odot h2 {
+        font-size: 25px;
+        font-family: MPLUSRounded1c-Black;
+        text-align: right;
+        color: #FF7F64;
+    }
+
+    #odot p,ul,a {
+        font-size: 18px;
+        font-family: MPLUSRounded1c-Medium;
+        color:white;
+    }
+
+    #odot img {
+        width: 180px;
+        height: 100px;
+    }
+
+    #odot a {
+        color: #F7E4BF;
+    }
+
+/*___________ מפת אתר ____________*/
+
+#container5 div {
+    padding: 50px 90px;
+    line-height: 37px;
+}
+
+#mapatAtar nav ul li {
+    font-size: 27px;
+    font-family: MPLUSRounded1c-Bold;
+    list-style-type: square;
+}
+
+#mapatAtar nav ul li a:visited {
+    /*color: black;*/
+}
+
+#mapatAtar nav li ul li {
+    list-style-type: circle;
+}
+
+#mapaCharacter {
+    position: absolute;
+    top: 230px;
+    right: 750px;
+    width: 580px;
+    height: 700px;
+    transform: rotate(354deg);
+}
+
+/*_____________ צור קשר _____________*/
+
+form {
+    padding: 30px 90px;
+}
+
+form input {
+    border-radius: 6px;
+}
+
+form label {
+    color: white;
+}
+
+    form input:focus, form textarea:focus {
+        border-radius: 6px;
+        border: 4px solid black;
+        background-color: #FF7F64;
+    }
+
+form p {
+    color: white;
+    font-size: 14px;
+    font-family: MPLUSRounded1c-Medium;
+}
+
+fieldset legend {
+    color: white;
+    font-family: MPLUSRounded1c-Light;
+    font-weight: bold;
+}
+
+#sendAll {
+    padding: 10px;
+    font-size: 20px;
+    font-family: MPLUSRounded1c-Bold;
+}
+
+#contactCharacter {
+    position: absolute;
+    top: 80px;
+    right: 750px;
+    width: 550px;
+    height: 700px;
+    transform: rotate(6deg);
+}

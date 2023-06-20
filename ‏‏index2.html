@@ -1,0 +1,234 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>confiDate - דף הבית</title>
+    <meta name="description" content="confiDate - עמוד הבית" />
+    <meta name="keywords" content="דייט, דייטים, אהבה, זוגיות, לחץ, התמודדות" />
+    <meta name="author" content="צוות confiDate" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/icons/חששות.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/‏‏myStyle2.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script>
+        window.onscroll = function () { myFunction() };
+
+        function myFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("head").className = "mobilityNav";
+            } else {
+                document.getElementById("head").className = "";
+            }
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("upArrow").className = "upArrowShow";
+            } else {
+                document.getElementById("upArrow").className = "upArrowClass";
+            }
+        }
+
+        function myTopPage() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</head>
+
+
+<body>
+    <div id="container">
+        <header id="head" role="heading">
+
+            <!--תפריט ראשי-->
+
+
+            <nav id="nav1" aria-label="תפריט ניווט ראשי" role="navigation">
+                <a href="index.html"><img id="logoSize" src="images/icons/logo1.png" alt="לוגו האתר" title="לוגו האתר" /></a>
+                <a href="#skip" id="skipToContent">דלג לתוכן</a>
+                <ul>
+                    <li>
+                        <a href="">לפני הדייט</a>
+                        <ul id="before">
+                            <li><a href="" class="notActive">היכן מכירים?</a></li>
+                            <li><a href="‏‏fears2.html">חששות ופחדים</a></li>
+                            <li><a href="" class="notActive">נושאים לשיחה</a></li>
+                            <li><a href="" class="notActive">מה לובשים?</a></li>
+                            <li><a href="" class="notActive">סיפורים אישיים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">בזמן הדייט</a>
+                        <ul id="durring">
+                            <li><a href="" class="notActive">רעיונות ומקומות</a></li>
+                            <li><a href="‏‏doAndDontDo2.html">עשה \ אל תעשה</a></li>
+                            <li><a href="" class="notActive">שבירת הקרח</a></li>
+                            <li><a href="" class="notActive">שפת גוף</a></li>
+                            <li><a href="" class="notActive">סיפורים אישיים</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="">אחרי הדייט</a>
+                        <ul id="after">
+                            <li><a href="" class="notActive">דייט נוסף?</a></li>
+                            <li><a href="" class="notActive">ואם זה לא זה?</a></li>
+                            <li><a href="" class="notActive">סיפורים אישיים</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+
+            <a href="index.html"><img class="iconsAccessibilitySize" src="images/icons/נגישות.png" alt="כפתור נגישות" title=" נגישות" /></a>
+            <br /><br /><br /><br /><br />
+        </header>
+
+
+        <main role="main" name="skip" id="skip" tabindex="-1">
+
+
+            <!--חלק עליון של העמוד-->
+
+
+            <section>
+                <div id="titlesHomePage">
+                    <h1 id="mainTitle">יש לי דייט! מה עושים?!!</h1>
+                    <pre id="secondTitle">זה הזמן שלך להתגבר על הפחד,
+המסע שלך מתחיל כאן  
+</pre>
+                    <img src="images/icons/חצים.png" id="hetzimHomePage" alt="" />
+                    <img src="images/homePagePhoto.png" id="homePagePhoto" alt="מצד ימין של התמונה שמפנייה עם שתי כוסות יין על שולחן ומצד שמאל מלאך מבולבל" />
+                </div>
+            </section>
+
+
+            <!--קיצורים-->
+
+
+            <article id="kitzurim" aria-label="קישורים לתוכן באתר" role="region">
+                <h2>שאלות נפוצות...</h2>
+                <nav>
+                    <div>
+                        <ul>
+                            <li><a href="" class="notActive"><img src="images/buttons/כפתור חולצה.png" alt="אייקון של חולצה" /><br /><br /><p>מה לובשים?</p></a></li>
+                            <li><a href="" class="notActive"><img src="images/buttons/כפתור חששות.png" alt="סמיילי חושש" /><br /><br /><p>מה עם החשש?</p></a></li>
+                            <li><a href="" class="notActive"><img src="images/buttons/כפתור שולחן.png" alt="אייקון של שולחן במסעדה" /><br /><br /><p>לאן יוצאים?</p></a></li>
+                            <li><a href="" class="notActive"><img src="images/buttons/כפתור בועות דיבור.png" alt="אייקון בועות שיחה" /><br /><br /><p>על מה מדברים?</p></a></li>
+                            <li><a href="" class="notActive"><img src="images/buttons/כפתור לבבות.png" alt="אייקון של שתי לבבות" /><br /><br /><p>דייט שני?</p></a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </article>
+
+
+            <!--מטרת האתר-->
+
+
+            <article id="matara" role="region">
+                <h2>אז מה המטרה שלנו?</h2><br /><br /><br />
+                <div>
+                    <p id="pMatara">
+                        בין אם אתם כבר מיואשים מדייטים ואיבדתם את האמון
+                        שיגיע הפרטנר המושלם ובין אם אתם עומדים לצאת לפגישה בפעם הראשונה בחייכם, אנחנו כאן כדי לוודא שתגיעו מוכנים וללא חששות מיותרים, החל מהצעד הראשון במסע וגם אחריו כדי שתפיקו את המיטב!
+                    </p>
+                    <p id="pMouseHover">עברו עם העכבר על הדמוית</p>
+                </div>
+
+                <div id="bubblesSection" aria-label="דמוית מאויירות לפי ציר הזמן של לפני, לקראת ואחרי הדייט מביעות מחשבה">
+                    <img src="images/characters/דמות 1.png" id="characterBefore" class="characterSize" alt="דמות לחוצה לפני הדייט"/>
+                    <div id="partBefore">
+                        <img src="images/icons/בועה 1.png" id="bubbleBefore" class="bubbleSize" alt="בועת דיבור של הדמות הלחוצה לפני הדייט"/>
+                        <p id="pBefore">איזה לחץ! יש לי דייט בשבת אני לא יודע מה אעשה!!!</p>
+                    </div>
+
+                    <img src="images/characters/דמות 2.png" id="characterDurring" class="characterSize" alt="דמות מתרגשת לקראת הדייט"/>
+                    <div id="partDurring">
+                        <img src="images/icons/בועה 2.png" id="bubbleDurring" class="bubbleSize" alt="בועת דיבור של הדמות המתרגשת לקראת הדייט"/>
+                        <p id="pDurring">אני לגמרי מוכנה לקראת הדייט מחר, חשבתי על הכל!</p>
+                    </div>
+
+                    <img src="images/characters/דמות 3.png" id="characterAfter" class="characterSize" alt="דמות רגועה אחרי הדייט"/>
+                    <div id="partAfter">
+                        <img src="images/icons/בועה 3.png" id="bubbleAfter" class="bubbleSize" alt="בועת דיבור של הדמות הרגועה אחרי הדייט"/>
+                        <p id="pAfter">הדייט היה מדהים! האתר הכין אותי בדיוק כמו שצריך!</p>
+                    </div>
+                </div>
+            </article>
+
+
+            <!--סיפורים של אנשים-->
+
+
+            <article id="sipurim" role="region">
+                <h2>מוזמנים להתרשם ממסעות שאנשים שיתפו:</h2>
+
+                <section>
+                    <div id="otef1">
+                        <div id="name1" class="right">
+                            <pre>עומרי,
+18</pre>
+                        </div>
+                        <div id="story1" class="left">
+                            <p>
+                                מעולם לא העזתי להתחיל עם בחורה ואין לי שום ניסיון בכך, הייתה מישהי ששירתה איתי בבסיס ורציתי מאוד לגשת אליה. אחרי שחקרתי את האתר ידעתי בדיוק איך אעשה זאת! השעה הייתה 19:30, התלבשתי, יצאתי לכיוון הרחוב מתחת לביתי וחיכיתי לרגע המתאים........
+                            </p>
+                        </div>
+                        <a href="" class="moreStory left" id="more1">רוצה לשמוע עוד >></a>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="otef2">
+                        <div id="name2" class="left">
+                            <pre>יעל,
+35</pre>
+                        </div>
+                        <div id="story2" class="right">
+                            <p>
+                                כל חיי שמתי את העבודה במקום הראשון. עד שהחלטתי שחייב שינוי! ואני מוכנה לזוגיות. אבל, איפה מכירים אנשים? לאן יוצאים ובמיוחד בגילאים שלי. קראתי באתר על הפאב הנחמד שבימי רביעי יש להם קונספט ייחודי לגילאי 30+ והחלטתי לנסות. הגעתי למקום........
+                            </p>
+                        </div>
+                        <a href="" class="moreStory right" id="more2">רוצה לשמוע עוד >></a>
+                    </div>
+                </section>
+
+                <section>
+                    <div id="otef3">
+                        <div id="name3" class="right">
+                            <pre>אביבה,
+52</pre>
+                        </div>
+                        <div id="story3" class="left">
+                            <p>
+                                התגרשתי לפני כמה שנים ויש לי 3 ילדים מקסימים. אך עם זאת, לא פשוט למצוא זוגיות בפרק ב' בחיים. לפחות ככה חשבתי, עד שחברה הכירה לי את האתר ומשם הכל התחיל. הבנתי שיש עוד אנשים כמוני שמחפשים קשר בשלב זה ושלחתי הודעה למישהו שהיה נראה נחמד........
+                            </p>
+                        </div>
+                        <a href="" class="moreStory left" id="more3">רוצה לשמוע עוד >></a>
+                    </div>
+                </section>
+            </article>
+
+            <div>
+                <img src="images/icons/שמפנייה ימין.png" id="bg-champagneRight" alt=""/>
+            </div>
+        </main>
+
+        <button onclick="myTopPage()" id="upArrow" class="upArrowClass" title="חץ שמוביל לתחילת העמוד" aria-label="חץ שמוביל לתחילת העמוד"></button>
+
+        <hr />
+        <footer role="contentinfo">
+            <div>
+                <a href="‏‏about2.html">אודות</a>  |
+                <a href="‏‏siteMap2.html">מפת אתר</a> |
+                <a href="‏‏contactUs2.html">צור קשר</a>
+            </div>
+        </footer>
+
+
+    </div>
+</body>
+</html>
